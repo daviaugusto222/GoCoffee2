@@ -92,11 +92,22 @@
                     <navigationItem key="navigationItem" title="Favoritos" id="M67-Uz-Cs8"/>
                     <connections>
                         <outlet property="favoritostableview" destination="5aC-7t-0Tn" id="RHN-Zk-SQK"/>
+                        <segue destination="Qeo-0e-des" kind="show" identifier="showDetailCoffee" id="WG2-f3-I2b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ui-G9-Ysj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344.9275362318842" y="-14.0625"/>
+        </scene>
+        <!--DetailCoffee-->
+        <scene sceneID="f3w-U6-wkS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailCoffee" id="Qeo-0e-des" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YFH-mo-2cA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtU-Dm-ZST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="-23"/>
         </scene>
         <!--Favoritos-->
         <scene sceneID="1l9-VE-zRJ">

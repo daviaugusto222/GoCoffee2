@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84201AE328EC961700E276DD /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201AE228EC961700E276DD /* FavoritosViewController.swift */; };
 		8461B56028B6A6C60070770E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8461B55F28B6A6C60070770E /* Home.storyboard */; };
 		8461B56228B6A6FB0070770E /* Favoritos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8461B56128B6A6FB0070770E /* Favoritos.storyboard */; };
 		8461B56428B6A7F00070770E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461B56328B6A7F00070770E /* HomeViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84201AE228EC961700E276DD /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		8461B55F28B6A6C60070770E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8461B56128B6A6FB0070770E /* Favoritos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favoritos.storyboard; sourceTree = "<group>"; };
 		8461B56328B6A7F00070770E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8461B56128B6A6FB0070770E /* Favoritos.storyboard */,
+				84201AE228EC961700E276DD /* FavoritosViewController.swift */,
 			);
 			path = Favoritos;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8461B56C28B7AF940070770E /* DetailCoffeViewController.swift in Sources */,
+				84201AE328EC961700E276DD /* FavoritosViewController.swift in Sources */,
 				84AE96BB27BC8C710081ACB6 /* ViewController.swift in Sources */,
 				84AE96B727BC8C710081ACB6 /* AppDelegate.swift in Sources */,
 				84AE96B927BC8C710081ACB6 /* SceneDelegate.swift in Sources */,

@@ -11,14 +11,88 @@
         <!--Favoritos-->
         <scene sceneID="Ej4-2d-9Lr">
             <objects>
-                <viewController id="5Y2-oI-BU7" sceneMemberID="viewController">
+                <viewController id="5Y2-oI-BU7" customClass="FavoritosViewController" customModule="GoCoffee2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oJ4-XF-nSC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="147" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-7t-0Tn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="systemGray5Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="15" reuseIdentifier="coffeeCell" id="cH4-Tu-qUW" customClass="CoffeeTableViewCell" customModule="GoCoffee2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cH4-Tu-qUW" id="V3R-lX-VEA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-Bb-q0W">
+                                                    <rect key="frame" x="16" y="33.5" width="80" height="80"/>
+                                                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="bZ6-Am-jJs"/>
+                                                        <constraint firstAttribute="width" constant="80" id="cj3-mz-k8q"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="40"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Le Pain Le Café" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Car-H8-VPW">
+                                                    <rect key="frame" x="112" y="16" width="286" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="The best of brazilian coffee combined with the purity and perfectionism of Japan. " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-cC-qcV">
+                                                    <rect key="frame" x="112" y="43.5" width="286" height="87.5"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                    </accessibility>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Fcj-cC-qcV" secondAttribute="bottom" constant="16" id="D5z-zK-yvk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Car-H8-VPW" secondAttribute="trailing" constant="16" id="H1d-ij-X8g"/>
+                                                <constraint firstItem="Car-H8-VPW" firstAttribute="leading" secondItem="bNX-Bb-q0W" secondAttribute="trailing" constant="16" id="MX4-ej-TrC"/>
+                                                <constraint firstItem="bNX-Bb-q0W" firstAttribute="centerY" secondItem="V3R-lX-VEA" secondAttribute="centerY" id="Mzz-gD-noR"/>
+                                                <constraint firstItem="bNX-Bb-q0W" firstAttribute="leading" secondItem="V3R-lX-VEA" secondAttribute="leading" constant="16" id="TzK-U1-Ha5"/>
+                                                <constraint firstItem="Fcj-cC-qcV" firstAttribute="leading" secondItem="bNX-Bb-q0W" secondAttribute="trailing" constant="16" id="ZPE-Rh-Xwf"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fcj-cC-qcV" secondAttribute="trailing" constant="16" id="ogb-2j-Dhi"/>
+                                                <constraint firstItem="Car-H8-VPW" firstAttribute="top" secondItem="V3R-lX-VEA" secondAttribute="top" constant="16" id="yWy-6i-Zbe"/>
+                                                <constraint firstItem="Fcj-cC-qcV" firstAttribute="top" secondItem="Car-H8-VPW" secondAttribute="bottom" id="ydV-PN-mXe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionCoffee" destination="Fcj-cC-qcV" id="UoC-Ri-o37"/>
+                                            <outlet property="imageCoffee" destination="bNX-Bb-q0W" id="ogb-OG-JSE"/>
+                                            <outlet property="titleCoffee" destination="Car-H8-VPW" id="L1v-V1-1LD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FKV-ig-vOt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FKV-ig-vOt" firstAttribute="trailing" secondItem="5aC-7t-0Tn" secondAttribute="trailing" id="2Cv-vt-AaH"/>
+                            <constraint firstAttribute="bottom" secondItem="5aC-7t-0Tn" secondAttribute="bottom" id="bOo-tr-YoX"/>
+                            <constraint firstItem="5aC-7t-0Tn" firstAttribute="top" secondItem="FKV-ig-vOt" secondAttribute="top" id="i03-H7-IDw"/>
+                            <constraint firstItem="5aC-7t-0Tn" firstAttribute="leading" secondItem="oJ4-XF-nSC" secondAttribute="leading" id="xH2-dG-BDO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favoritos" id="M67-Uz-Cs8"/>
+                    <connections>
+                        <outlet property="favoritostableview" destination="5aC-7t-0Tn" id="RHN-Zk-SQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ui-G9-Ysj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,11 +126,17 @@
     <resources>
         <image name="staroflife" catalog="system" width="124" height="128"/>
         <image name="staroflife.fill" catalog="system" width="124" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

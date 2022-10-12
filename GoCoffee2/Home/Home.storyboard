@@ -89,7 +89,7 @@
                             <constraint firstItem="q8q-fI-Hgf" firstAttribute="trailing" secondItem="Fdz-Xx-sR8" secondAttribute="trailing" id="lpg-t7-niK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Go Coffee" largeTitleDisplayMode="always" id="32r-Xt-PLj"/>
+                    <navigationItem key="navigationItem" title="Go Coffeee" largeTitleDisplayMode="always" id="32r-Xt-PLj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="coffeeShop" destination="q8q-fI-Hgf" id="iQG-2B-HO8"/>

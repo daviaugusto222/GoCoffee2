@@ -30,7 +30,7 @@
         <!--Home-->
         <scene sceneID="DVK-CZ-Rzb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="RJJ-Wb-vDy" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Inicio" id="RJJ-Wb-vDy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="cMg-x9-Mhp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXK-HH-ef2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

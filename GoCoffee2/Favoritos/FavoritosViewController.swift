@@ -39,7 +39,7 @@ extension FavoritosViewController: UITableViewDataSource, UITableViewDelegate {
         
         // Altera a cor de fundo para branco quando seleciona a celula
         let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.white
+        backgroundView.backgroundColor = UIColor.gray
         cell.selectedBackgroundView = backgroundView
         
         let coffee = favoriteShops[indexPath.row]
